@@ -1,8 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // Login session remove
+    localStorage.removeItem("isLoggedIn");
+
+    // Login page par redirect
+    navigate("/login", { replace: true });
+  };
+
   return (
     <nav className="navbar">
 
@@ -16,7 +26,7 @@ function Navbar() {
       <div className="navbar-links">
 
         <NavLink
-          to="/"
+          to="/dashboard"
           className={({ isActive }) =>
             isActive ? "active" : ""
           }
@@ -37,12 +47,14 @@ function Navbar() {
           👤 Ambika
         </div>
 
-        <NavLink
-          to="/logout"
+        {/* LOGOUT */}
+        <button
+          type="button"
           className="logout"
+          onClick={handleLogout}
         >
           Logout
-        </NavLink>
+        </button>
 
       </div>
     </nav>

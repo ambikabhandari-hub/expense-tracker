@@ -4,15 +4,31 @@ function LogoutButton() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
+    // Check that button is working
+    alert("Logout button clicked!");
+
+    // Remove login session
     localStorage.removeItem("isLoggedIn");
 
-    navigate("/login");
+    // Remove saved user session if present
+    sessionStorage.clear();
+
+    // Go to login page
+    navigate("/login", {
+      replace: true,
+    });
+
+    // Refresh the application
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
   };
 
   return (
     <button
-      onClick={handleLogout}
+      type="button"
       className="logout-btn"
+      onClick={handleLogout}
     >
       Logout
     </button>
