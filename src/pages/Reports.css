@@ -1,0 +1,418 @@
+/* =========================
+   REPORTS PAGE
+========================= */
+
+.reports-page {
+  min-height: 100vh;
+  padding: 45px 7%;
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(74, 70, 180, 0.25),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #05091f,
+      #071b3a,
+      #120b2d
+    );
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.reports-header {
+  margin-bottom: 28px;
+}
+
+.reports-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.reports-header p {
+  margin-top: 8px;
+  color: #a9b1c9;
+  font-size: 15px;
+}
+
+
+/* =========================
+   REPORT CARDS
+========================= */
+
+.report-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+
+/* COMMON CARD */
+
+.report-card {
+  min-height: 150px;
+  padding: 25px;
+  box-sizing: border-box;
+
+  border-radius: 20px;
+
+  color: #ffffff;
+
+  transition: 0.25s ease;
+}
+
+
+/* TOTAL INCOME - GREEN/TEAL */
+
+.report-card:nth-child(1) {
+  background:
+    linear-gradient(
+      135deg,
+      #073d3d,
+      #075d59
+    );
+
+  border: 1px solid rgba(65, 255, 210, 0.35);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 25px rgba(65, 255, 210, 0.05);
+}
+
+
+/* TOTAL EXPENSES - DARK PINK */
+
+.report-card:nth-child(2) {
+  background:
+    linear-gradient(
+      135deg,
+      #481436,
+      #741c50
+    );
+
+  border: 1px solid rgba(255, 70, 160, 0.4);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 25px rgba(255, 70, 160, 0.06);
+}
+
+
+/* CURRENT BALANCE - BLUE */
+
+.report-card:nth-child(3) {
+  background:
+    linear-gradient(
+      135deg,
+      #102f5d,
+      #164d82
+    );
+
+  border: 1px solid rgba(70, 170, 255, 0.4);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 25px rgba(70, 170, 255, 0.06);
+}
+
+
+/* HOVER */
+
+.report-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* ICON */
+
+.report-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 15px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  font-size: 23px;
+}
+
+
+/* TEXT */
+
+.report-card p {
+  margin: 0 0 7px;
+
+  color: #c9cee0;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.report-card h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   REPORT SECTIONS
+========================= */
+
+.report-section {
+  margin-top: 25px;
+  padding: 28px;
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      135deg,
+      #24134a,
+      #30144b,
+      #211238
+    );
+
+  border: 1px solid rgba(185, 93, 255, 0.3);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.35),
+    inset 0 0 25px rgba(180, 70, 255, 0.04);
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.report-section h2 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CHART
+========================= */
+
+.chart-section {
+  overflow: hidden;
+}
+
+.chart-container {
+  width: 100%;
+  min-height: 320px;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      135deg,
+      #171a52,
+      #32135b
+    );
+
+  border: 1px solid rgba(125, 120, 255, 0.35);
+
+  border-radius: 18px;
+}
+
+
+/* =========================
+   NO DATA
+========================= */
+
+.no-data {
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #171a45,
+      #32143f
+    );
+
+  border: 1px dashed rgba(255, 79, 166, 0.4);
+
+  border-radius: 18px;
+}
+
+.no-data > div {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.no-data h3 {
+  margin: 5px 0;
+
+  color: #ffffff;
+
+  font-size: 18px;
+}
+
+.no-data p {
+  margin: 5px 0;
+
+  color: #a9b1c9;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   EXPENSE SUMMARY
+========================= */
+
+.expense-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 17px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #24152f,
+      #3c1740
+    );
+
+  border: 1px solid rgba(255, 79, 166, 0.25);
+
+  border-radius: 14px;
+
+  transition: 0.2s ease;
+}
+
+.summary-row:hover {
+  border-color: rgba(255, 79, 166, 0.7);
+
+  background:
+    linear-gradient(
+      135deg,
+      #351738,
+      #52194b
+    );
+}
+
+.summary-row strong {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.summary-row > strong {
+  color: #ff72b7;
+  font-size: 16px;
+}
+
+.summary-row small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #a9b1c9;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   RECHARTS
+========================= */
+
+.recharts-default-tooltip {
+  background: #17142d !important;
+  border: 1px solid #ff4fa6 !important;
+  border-radius: 10px !important;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.recharts-legend-item-text {
+  color: #ddddf2 !important;
+}
+
+.recharts-text {
+  fill: #ffffff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .report-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .reports-page {
+    padding: 35px 5%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .reports-page {
+    padding: 25px 18px;
+  }
+
+  .reports-header h1 {
+    font-size: 27px;
+  }
+
+  .report-section {
+    padding: 20px;
+  }
+
+  .report-card {
+    padding: 20px;
+  }
+
+  .summary-row {
+    padding: 14px;
+  }
+}

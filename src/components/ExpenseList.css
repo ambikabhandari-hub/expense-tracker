@@ -1,0 +1,275 @@
+.expense-list {
+  margin-top: 30px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.expense-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.expense-list-header h2 {
+  margin: 0;
+  color: #292633;
+  font-size: 22px;
+}
+
+.expense-list-header p {
+  margin: 6px 0 0;
+  color: #77717f;
+  font-size: 14px;
+}
+
+.expense-count {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #f3f1ff;
+  color: #6c63d9;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.empty-expenses {
+  padding: 35px 20px;
+  text-align: center;
+  border-radius: 15px;
+  background: #fafafa;
+}
+
+.empty-icon {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.empty-expenses h3 {
+  margin: 5px 0;
+  color: #403b48;
+}
+
+.empty-expenses p {
+  margin: 5px 0;
+  color: #88828e;
+  font-size: 14px;
+}
+
+.expense-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 14px;
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+}
+
+.expense-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.expense-item-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #fff0f2;
+  font-size: 20px;
+}
+
+.expense-info h3 {
+  margin: 0;
+  color: #393440;
+  font-size: 15px;
+}
+
+.expense-info p {
+  margin: 5px 0 0;
+  color: #88828e;
+  font-size: 12px;
+}
+
+.expense-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.expense-actions strong {
+  color: #e35d6a;
+  font-size: 15px;
+}
+
+.expense-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.expense-actions button:hover {
+  background: #ffe5e8;
+}
+
+@media (max-width: 600px) {
+  .expense-list-header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .expense-item {
+    gap: 10px;
+  }
+
+  .expense-actions {
+    gap: 8px;
+  }
+
+  .expense-actions strong {
+    font-size: 13px;
+  }
+}
+
+.edit-btn {
+  border: none;
+  background: #f1edff;
+  color: #6c63d9;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-btn:hover {
+  background: #e5dfff;
+}
+
+.edit-expense-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 120px 150px 150px;
+  gap: 10px;
+  align-items: center;
+}
+
+.edit-expense-form input,
+.edit-expense-form select {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 13px;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.save-btn,
+.cancel-btn {
+  border: none;
+  padding: 9px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-btn {
+  background: #35b879;
+  color: white;
+}
+
+.cancel-btn {
+  background: #eeeeee;
+  color: #555;
+}
+
+@media (max-width: 800px) {
+  .edit-expense-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.expense-search {
+  margin: 18px 0;
+}
+
+.expense-search input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 15px;
+
+  border: 1px solid #e5e1ef;
+  border-radius: 12px;
+
+  background: #faf9fd;
+  color: #393440;
+
+  outline: none;
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.expense-search input:focus {
+  border-color: #8b7de8;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 217, 0.08);
+}
+
+.expense-search input::placeholder {
+  color: #9993a1;
+}
+
+.expense-filters {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.expense-filters input,
+.expense-filters select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+
+  border: 1px solid #e5e1ef;
+  border-radius: 12px;
+
+  background: #faf9fd;
+  color: #393440;
+
+  outline: none;
+  font-size: 14px;
+}
+
+.expense-filters input:focus,
+.expense-filters select:focus {
+  border-color: #8b7de8;
+  box-shadow: 0 0 0 3px rgba(108, 99, 217, 0.08);
+}
+
+@media (max-width: 600px) {
+  .expense-filters {
+    grid-template-columns: 1fr;
+  }
+}

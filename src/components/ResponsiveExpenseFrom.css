@@ -1,0 +1,48 @@
+@media (max-width: 700px) {
+  .expense-form {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .expense-form form {
+    width: 100%;
+  }
+
+  .expense-form input,
+  .expense-form select,
+  .expense-form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .expense-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .expense-form {
+    padding: 15px;
+  }
+
+  .expense-form h2 {
+    font-size: 20px;
+  }
+
+  .expense-form label {
+    font-size: 13px;
+  }
+
+  .expense-form input,
+  .expense-form select {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .expense-form button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

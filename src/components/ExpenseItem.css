@@ -1,0 +1,56 @@
+.expense-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #faf9fd;
+  border: 1px solid #eeeeee;
+}
+
+.expense-item-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 13px;
+  background: #f1edff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.expense-item-info {
+  flex: 1;
+}
+
+.expense-item-info h3 {
+  margin: 0 0 5px;
+  color: #302d38;
+  font-size: 16px;
+}
+
+.expense-item-info p {
+  margin: 0;
+  color: #85808d;
+  font-size: 13px;
+}
+
+.expense-item-amount {
+  color: #e05252;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.delete-btn {
+  border: none;
+  background: #fff0f0;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-btn:hover {
+  background: #ffe0e0;
+}

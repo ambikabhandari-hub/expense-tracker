@@ -1,0 +1,25 @@
+.theme-toggle {
+  position: fixed;
+  top: 75px;
+  right: 25px;
+
+  z-index: 1000;
+
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+  font-size: 20px;
+
+  transition: 0.25s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+}

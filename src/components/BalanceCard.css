@@ -1,0 +1,53 @@
+.balance-card {
+  position: relative;
+  padding: 26px;
+  min-height: 125px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #8b7cf6, #6c63d9);
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(108, 99, 217, 0.25);
+}
+
+.balance-content {
+  position: relative;
+  z-index: 2;
+}
+
+.balance-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.balance-card h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.balance-subtitle {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.balance-icon {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+
+  font-size: 22px;
+  font-weight: bold;
+}

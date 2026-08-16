@@ -1,0 +1,882 @@
+/* =========================================
+   LOGIN / REGISTER PAGE
+========================================= */
+
+.login-page,
+.register-page,
+.auth-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(99, 102, 241, 0.25),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(16, 185, 129, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #080b24 0%,
+      #10163d 50%,
+      #111827 100%
+    ) !important;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   AUTH CONTAINER
+========================================= */
+
+.login-container,
+.register-container,
+.auth-container {
+  width: 100%;
+  max-width: 520px;
+  padding: 35px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(24, 31, 70, 0.96),
+    rgba(30, 41, 80, 0.96)
+  ) !important;
+
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 22px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(99, 102, 241, 0.12);
+
+  backdrop-filter: blur(15px);
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.login-container h1,
+.login-container h2,
+.register-container h1,
+.register-container h2,
+.auth-container h1,
+.auth-container h2 {
+  color: #ffffff !important;
+  margin-bottom: 10px;
+}
+
+
+/* Subtitle */
+.login-container p,
+.register-container p,
+.auth-container p {
+  color: #b8c1df !important;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.login-container label,
+.register-container label,
+.auth-container label {
+  display: block;
+
+  color: #dbe4ff !important;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+/* Sabhi input fields ko target karo */
+.login-container input,
+.register-container input,
+.auth-container input,
+.login-page input,
+.register-page input,
+.auth-page input {
+  width: 100% !important;
+
+  height: 52px !important;
+
+  padding: 0 16px !important;
+
+  margin-bottom: 18px !important;
+
+  background: linear-gradient(
+    135deg,
+    #182653 0%,
+    #20376d 50%,
+    #182b55 100%
+  ) !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid
+    rgba(96, 165, 250, 0.45) !important;
+
+  border-radius: 12px !important;
+
+  outline: none !important;
+
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.18),
+    0 0 12px rgba(59, 130, 246, 0.06) !important;
+
+  font-size: 15px !important;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease !important;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.login-container input::placeholder,
+.register-container input::placeholder,
+.auth-container input::placeholder,
+.login-page input::placeholder,
+.register-page input::placeholder,
+.auth-page input::placeholder {
+  color: #9fb0d0 !important;
+  opacity: 1 !important;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+.login-container input:focus,
+.register-container input:focus,
+.auth-container input:focus,
+.login-page input:focus,
+.register-page input:focus,
+.auth-page input:focus {
+  background: linear-gradient(
+    135deg,
+    #1e3267,
+    #274784
+  ) !important;
+
+  color: #ffffff !important;
+
+  border-color: #60a5fa !important;
+
+  box-shadow:
+    0 0 0 3px rgba(96, 165, 250, 0.15),
+    0 0 20px rgba(59, 130, 246, 0.18) !important;
+}
+
+
+/* =========================================
+   AUTOFILL FIX
+   Chrome kabhi input ko white/yellow kar deta hai
+========================================= */
+
+.login-container input:-webkit-autofill,
+.register-container input:-webkit-autofill,
+.auth-container input:-webkit-autofill,
+.login-page input:-webkit-autofill,
+.register-page input:-webkit-autofill,
+.auth-page input:-webkit-autofill,
+
+.login-container input:-webkit-autofill:hover,
+.register-container input:-webkit-autofill:hover,
+.auth-container input:-webkit-autofill:hover,
+
+.login-container input:-webkit-autofill:focus,
+.register-container input:-webkit-autofill:focus,
+.auth-container input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+
+  -webkit-box-shadow:
+    0 0 0px 1000px #20376d inset !important;
+
+  box-shadow:
+    0 0 0px 1000px #20376d inset !important;
+
+  background-color: #20376d !important;
+
+  caret-color: #ffffff !important;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.login-container button,
+.register-container button,
+.auth-container button,
+.login-page button,
+.register-page button,
+.auth-page button {
+  width: 100%;
+
+  min-height: 52px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  margin-top: 8px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #3b82f6,
+    #06b6d4
+  ) !important;
+
+  color: #ffffff !important;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(59, 130, 246, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.login-container button:hover,
+.register-container button:hover,
+.auth-container button:hover,
+.login-page button:hover,
+.register-page button:hover,
+.auth-page button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px rgba(59, 130, 246, 0.35);
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.login-container a,
+.register-container a,
+.auth-container a,
+.login-page a,
+.register-page a,
+.auth-page a {
+  color: #60a5fa !important;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.login-container a:hover,
+.register-container a:hover,
+.auth-container a:hover {
+  color: #93c5fd !important;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.error,
+.error-message {
+  color: #fca5a5 !important;
+
+  background: rgba(239, 68, 68, 0.10);
+
+  border: 1px solid rgba(239, 68, 68, 0.25);
+
+  border-radius: 10px;
+
+  padding: 10px 12px;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .login-page,
+  .register-page,
+  .auth-page {
+    padding: 20px 14px;
+  }
+
+  .login-container,
+  .register-container,
+  .auth-container {
+    padding: 25px 20px;
+    border-radius: 18px;
+  }
+}
+/* =========================================
+   REGISTER / LOGIN INPUTS - DARK PINK
+========================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background: linear-gradient(
+    135deg,
+    #3b1235 0%,
+    #541844 50%,
+    #3d1236 100%
+  ) !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.65) !important;
+
+  border-radius: 12px !important;
+
+  outline: none !important;
+
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.25),
+    0 0 12px rgba(236, 72, 153, 0.08) !important;
+}
+
+
+/* Placeholder */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #e5b4d2 !important;
+  opacity: 1 !important;
+}
+
+
+/* Click / Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background: linear-gradient(
+    135deg,
+    #4a153f,
+    #681d52
+  ) !important;
+
+  color: #ffffff !important;
+
+  border-color: #ec4899 !important;
+
+  box-shadow:
+    0 0 0 3px rgba(236, 72, 153, 0.15),
+    0 0 20px rgba(236, 72, 153, 0.18) !important;
+}
+
+
+/* Chrome autofill ki white/yellow patti bhi remove */
+input[type="text"]:-webkit-autofill,
+input[type="email"]:-webkit-autofill,
+input[type="password"]:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+
+  -webkit-box-shadow:
+    0 0 0 1000px #541844 inset !important;
+
+  box-shadow:
+    0 0 0 1000px #541844 inset !important;
+
+  background-color: #541844 !important;
+}
+/* Input ki white patti ka colour change */
+.login-container input,
+.register-container input,
+.auth-container input {
+  background: #451437 !important;
+  color: white !important;
+  border: 1px solid #c23b8b !important;
+}
+
+/* Placeholder text */
+.login-container input::placeholder,
+.register-container input::placeholder,
+.auth-container input::placeholder {
+  color: #e6b6d5 !important;
+}
+
+/* Click karne par bhi white na ho */
+.login-container input:focus,
+.register-container input:focus,
+.auth-container input:focus {
+  background: #541946 !important;
+  color: white !important;
+  border-color: #ec4899 !important;
+  outline: none !important;
+}
+/* =========================================
+   REGISTER FIELD TEXT / LABELS
+========================================= */
+
+.login-container label,
+.register-container label,
+.auth-container label {
+  color: #f3c4df !important;
+  font-weight: 600 !important;
+}
+
+
+/* Input ke andar placeholder text */
+.login-container input::placeholder,
+.register-container input::placeholder,
+.auth-container input::placeholder {
+  color: #d9a5c7 !important;
+  opacity: 1 !important;
+}
+/* REGISTER INPUT PLACEHOLDER TEXT */
+input::placeholder {
+  color: #f3c4df !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #f3c4df !important;
+}
+/* =========================================
+   CREATE ACCOUNT - COMPACT FORM
+========================================= */
+
+.login-page,
+.register-page,
+.auth-page {
+  min-height: 100vh;
+  padding: 15px 20px !important;
+  align-items: center !important;
+}
+
+
+/* Card ko compact karo */
+.login-container,
+.register-container,
+.auth-container {
+  max-width: 500px !important;
+  padding: 24px 30px !important;
+  border-radius: 20px !important;
+}
+
+
+/* Heading ka space kam */
+.login-container h1,
+.login-container h2,
+.register-container h1,
+.register-container h2,
+.auth-container h1,
+.auth-container h2 {
+  margin-bottom: 5px !important;
+  font-size: 26px !important;
+}
+
+
+/* Subtitle */
+.login-container p,
+.register-container p,
+.auth-container p {
+  margin-bottom: 16px !important;
+}
+
+
+/* Labels */
+.login-container label,
+.register-container label,
+.auth-container label {
+  margin-bottom: 4px !important;
+  font-size: 13px !important;
+}
+
+
+/* Input boxes chhote */
+.login-container input,
+.register-container input,
+.auth-container input {
+  height: 42px !important;
+  margin-bottom: 10px !important;
+  padding: 0 13px !important;
+  font-size: 14px !important;
+}
+
+
+/* Button */
+.login-container button,
+.register-container button,
+.auth-container button {
+  min-height: 44px !important;
+  margin-top: 4px !important;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .login-page,
+  .register-page,
+  .auth-page {
+    padding: 10px 12px !important;
+  }
+
+  .login-container,
+  .register-container,
+  .auth-container {
+    padding: 20px 18px !important;
+  }
+
+  .login-container input,
+  .register-container input,
+  .auth-container input {
+    height: 40px !important;
+    margin-bottom: 8px !important;
+  }
+}
+/* =========================================
+   REGISTER PAGE - COMPACT NO SCROLL
+========================================= */
+
+.login-page {
+  min-height: 100vh !important;
+  height: 100vh !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 10px 15px !important;
+
+  overflow: hidden !important;
+}
+
+
+/* Main Create Account Card */
+
+.login-card {
+  width: 100% !important;
+  max-width: 430px !important;
+
+  padding: 20px 28px !important;
+
+  border-radius: 20px !important;
+
+  background: linear-gradient(
+    145deg,
+    #171044,
+    #25134f,
+    #32143f
+  ) !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.35) !important;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(236, 72, 153, 0.08) !important;
+}
+
+
+/* Icon */
+
+.login-icon {
+  width: 45px !important;
+  height: 45px !important;
+
+  margin: 0 auto 7px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 50% !important;
+
+  font-size: 22px !important;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #ec4899
+  ) !important;
+}
+
+
+/* Heading */
+
+.login-card h1 {
+  margin: 0 0 3px !important;
+
+  text-align: center !important;
+
+  color: #ffffff !important;
+
+  font-size: 25px !important;
+}
+
+
+/* Subtitle */
+
+.login-card > p {
+  margin: 0 0 13px !important;
+
+  text-align: center !important;
+
+  color: #b9b1ce !important;
+
+  font-size: 13px !important;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.login-card .form-group {
+  margin-bottom: 9px !important;
+}
+
+
+/* Labels */
+
+.login-card .form-group label {
+  display: block !important;
+
+  margin-bottom: 3px !important;
+
+  color: #f0c5dc !important;
+
+  font-size: 12px !important;
+
+  font-weight: 600 !important;
+}
+
+
+/* =========================================
+   INPUT BOXES
+========================================= */
+
+.login-card .form-group input {
+  width: 100% !important;
+
+  height: 38px !important;
+
+  padding: 0 12px !important;
+
+  margin: 0 !important;
+
+  border-radius: 9px !important;
+
+  background: #451437 !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.55) !important;
+
+  outline: none !important;
+
+  font-size: 13px !important;
+}
+
+
+/* Placeholder */
+
+.login-card .form-group input::placeholder {
+  color: #d6a4c1 !important;
+
+  opacity: 1 !important;
+}
+
+
+/* Focus */
+
+.login-card .form-group input:focus {
+  background: #541946 !important;
+
+  border-color: #ec4899 !important;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(236, 72, 153, 0.12) !important;
+}
+
+
+/* =========================================
+   CREATE ACCOUNT BUTTON
+========================================= */
+
+.login-card .login-btn {
+  width: 100% !important;
+
+  height: 40px !important;
+
+  margin-top: 6px !important;
+
+  border: none !important;
+
+  border-radius: 9px !important;
+
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #ec4899
+  ) !important;
+
+  color: #ffffff !important;
+
+  font-size: 14px !important;
+
+  font-weight: 700 !important;
+
+  cursor: pointer !important;
+}
+
+
+/* =========================================
+   LOGIN TEXT
+========================================= */
+
+.login-card .register-text {
+  margin: 9px 0 5px !important;
+
+  text-align: center !important;
+
+  color: #aaa1bd !important;
+
+  font-size: 12px !important;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-card .register-btn {
+  width: 100% !important;
+
+  height: 34px !important;
+
+  border-radius: 8px !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.45) !important;
+
+  background: rgba(
+    236,
+    72,
+    153,
+    0.08
+  ) !important;
+
+  color: #f3a6d0 !important;
+
+  font-size: 13px !important;
+
+  font-weight: 600 !important;
+
+  cursor: pointer !important;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.login-card .login-error {
+  padding: 7px 10px !important;
+
+  margin-bottom: 9px !important;
+
+  border-radius: 7px !important;
+
+  font-size: 11px !important;
+
+  color: #fecaca !important;
+
+  background: rgba(
+    239,
+    68,
+    68,
+    0.12
+  ) !important;
+
+  border: 1px solid
+    rgba(239, 68, 68, 0.25) !important;
+}
+
+
+/* =========================================
+   SMALL SCREEN
+========================================= */
+
+@media (max-height: 700px) {
+
+  .login-card {
+    padding: 14px 25px !important;
+  }
+
+  .login-icon {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 19px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .login-card h1 {
+    font-size: 22px !important;
+  }
+
+  .login-card .form-group {
+    margin-bottom: 6px !important;
+  }
+
+  .login-card .form-group input {
+    height: 34px !important;
+  }
+
+  .login-card .login-btn {
+    height: 36px !important;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .login-page {
+    padding: 8px 12px !important;
+  }
+
+  .login-card {
+    max-width: 100% !important;
+    padding: 18px 20px !important;
+  }
+}

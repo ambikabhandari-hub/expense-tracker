@@ -1,0 +1,250 @@
+.expense-form {
+  margin-top: 30px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.expense-form h2 {
+  margin: 0;
+  color: #292633;
+  font-size: 22px;
+}
+
+.form-subtitle {
+  margin: 7px 0 24px;
+  color: #77717f;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #44404b;
+}
+
+.form-group input,
+.form-group select {
+  padding: 13px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  background: #fafafa;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.add-expense-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #7c5cff;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* =====================================================
+   EXPENSE FORM - ALL INPUT PATTIS DARK PINK
+   ===================================================== */
+
+.expense-form input,
+.expense-form select {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 16px;
+
+  border-radius: 10px;
+
+  /* DARK PINK BACKGROUND */
+  background: linear-gradient(
+    135deg,
+    #35122f 0%,
+    #401335 50%,
+    #28102b 100%
+  ) !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.55) !important;
+
+  outline: none;
+
+  font-size: 14px;
+
+  transition: all 0.25s ease;
+
+  box-shadow:
+    inset 0 0 18px
+    rgba(236, 72, 153, 0.06);
+}
+
+/* =====================================================
+   PLACEHOLDER
+   ===================================================== */
+
+.expense-form input::placeholder {
+  color: #c7a8c2 !important;
+  opacity: 1;
+}
+
+/* =====================================================
+   SELECT TEXT
+   ===================================================== */
+
+.expense-form select {
+  color: #ffffff !important;
+
+  appearance: auto;
+}
+
+.expense-form select option {
+  background: #28102b;
+  color: #ffffff;
+}
+
+/* =====================================================
+   FOCUS - PINK GLOW
+   ===================================================== */
+
+.expense-form input:focus,
+.expense-form select:focus {
+  background: linear-gradient(
+    135deg,
+    #421337 0%,
+    #50153e 50%,
+    #30102f 100%
+  ) !important;
+
+  border-color: #ec4899 !important;
+
+  box-shadow:
+    0 0 0 3px
+      rgba(236, 72, 153, 0.14),
+    0 0 20px
+      rgba(236, 72, 153, 0.12);
+}
+
+/* =====================================================
+   DATE FIELD
+   ===================================================== */
+
+.expense-form input[type="date"] {
+  background: linear-gradient(
+    135deg,
+    #35122f 0%,
+    #401335 50%,
+    #28102b 100%
+  ) !important;
+
+  color: #ffffff !important;
+
+  color-scheme: dark;
+}
+
+/* Calendar icon */
+.expense-form input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+
+  opacity: 0.8;
+
+  cursor: pointer;
+}
+
+/* =====================================================
+   EXPENSE NAME - FULL WIDTH
+   ===================================================== */
+
+.expense-form input[type="text"] {
+  background: linear-gradient(
+    135deg,
+    #35122f 0%,
+    #401335 50%,
+    #28102b 100%
+  ) !important;
+}
+
+/* =====================================================
+   AMOUNT FIELD
+   ===================================================== */
+
+.expense-form input[type="number"] {
+  background: linear-gradient(
+    135deg,
+    #35122f 0%,
+    #401335 50%,
+    #28102b 100%
+  ) !important;
+}
+
+/* =====================================================
+   CATEGORY FIELD
+   ===================================================== */
+
+.expense-form select {
+  background: linear-gradient(
+    135deg,
+    #35122f 0%,
+    #401335 50%,
+    #28102b 100%
+  ) !important;
+}
+
+/* =====================================================
+   LABELS
+   ===================================================== */
+
+.expense-form label {
+  color: #ffffff !important;
+}
+
+/* =====================================================
+   ADD EXPENSE BUTTON
+   ===================================================== */
+
+.expense-form button {
+  background: linear-gradient(
+    90deg,
+    #c026d3 0%,
+    #ec4899 50%,
+    #f43f5e 100%
+  ) !important;
+
+  color: #ffffff !important;
+
+  border: none;
+
+  box-shadow:
+    0 8px 22px
+    rgba(236, 72, 153, 0.25);
+}
+
+.expense-form button:hover {
+  background: linear-gradient(
+    90deg,
+    #a21caf 0%,
+    #db2777 50%,
+    #e11d48 100%
+  ) !important;
+
+  box-shadow:
+    0 10px 28px
+    rgba(236, 72, 153, 0.35);
+}

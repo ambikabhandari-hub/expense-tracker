@@ -1,0 +1,33 @@
+.expense-card {
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.expense-card p {
+  margin: 0 0 8px;
+  color: #77717f;
+  font-size: 14px;
+}
+
+.expense-card h2 {
+  margin: 0;
+  color: #333333;
+}
+
+.expense-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 14px;
+  background: #fff0f0;
+  color: #e05252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}

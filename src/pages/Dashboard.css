@@ -1,0 +1,878 @@
+/* ================================
+   MAIN DARK BACKGROUND
+================================ */
+
+.dashboard {
+  min-height: 100vh !important;
+  padding: 35px 4% 60px !important;
+  box-sizing: border-box;
+
+  color: #ffffff !important;
+
+  background:
+    radial-gradient(
+      circle at 85% 5%,
+      rgba(105, 45, 255, 0.35),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 5% 75%,
+      rgba(0, 210, 170, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 70% 80%,
+      rgba(255, 45, 150, 0.12),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #05071d 0%,
+      #080b2b 45%,
+      #10082d 100%
+    ) !important;
+}
+
+
+/* ================================
+   HEADINGS
+================================ */
+
+.dashboard h1 {
+  color: #ffffff !important;
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.dashboard-subtitle {
+  color: #a9afd0 !important;
+  margin: 8px 0 30px;
+}
+
+
+/* ================================
+   SUMMARY CARDS
+================================ */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+
+/* PURPLE */
+
+.balance-card {
+  background:
+    linear-gradient(
+      135deg,
+      #5422d9,
+      #3b17a4 55%,
+      #21105e
+    ) !important;
+
+  border: 1px solid rgba(137, 92, 255, 0.65) !important;
+
+  box-shadow:
+    0 10px 35px rgba(91, 45, 220, 0.30) !important;
+
+  color: white !important;
+}
+
+
+/* GREEN */
+
+.income-card {
+  background:
+    linear-gradient(
+      135deg,
+      #073f3c,
+      #073449 55%,
+      #071d34
+    ) !important;
+
+  border: 1px solid rgba(25, 205, 160, 0.45) !important;
+
+  box-shadow:
+    0 10px 35px rgba(0, 210, 170, 0.15) !important;
+
+  color: white !important;
+}
+
+
+/* PINK */
+
+.expense-card {
+  background:
+    linear-gradient(
+      135deg,
+      #581443,
+      #401331 55%,
+      #24102e
+    ) !important;
+
+  border: 1px solid rgba(255, 55, 145, 0.45) !important;
+
+  box-shadow:
+    0 10px 35px rgba(255, 45, 145, 0.18) !important;
+
+  color: white !important;
+}
+
+
+/* Card text */
+
+.balance-card *,
+.income-card *,
+.expense-card * {
+  color: #ffffff !important;
+}
+
+
+/* ================================
+   FORMS
+================================ */
+
+.forms-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+
+/* COMMON FORM */
+
+.income-form,
+.expense-form {
+  padding: 26px !important;
+  border-radius: 18px !important;
+
+  color: #ffffff !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 27, 67, 0.98),
+      rgba(8, 13, 40, 0.98)
+    ) !important;
+
+  border: 1px solid rgba(100, 120, 190, 0.28) !important;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* Green form */
+
+.income-form {
+  border-color: rgba(0, 210, 160, 0.25) !important;
+}
+
+
+/* Pink form */
+
+.expense-form {
+  border-color: rgba(255, 50, 145, 0.30) !important;
+}
+
+
+/* Form text */
+
+.income-form *,
+.expense-form * {
+  color: #ffffff !important;
+}
+
+
+/* Description */
+
+.income-form p,
+.expense-form p {
+  color: #9fa6c7 !important;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.income-form input,
+.income-form select,
+.expense-form input,
+.expense-form select {
+  width: 100% !important;
+  box-sizing: border-box;
+
+  padding: 13px 15px !important;
+
+  background: #0b1233 !important;
+  color: #ffffff !important;
+
+  border: 1px solid #303960 !important;
+  border-radius: 10px !important;
+
+  outline: none;
+}
+
+
+.income-form input::placeholder,
+.expense-form input::placeholder {
+  color: #777f9f !important;
+}
+
+
+/* ================================
+   GREEN BUTTON
+================================ */
+
+.income-form button {
+  width: 100% !important;
+  margin-top: 18px;
+
+  padding: 14px !important;
+
+  border: none !important;
+  border-radius: 10px !important;
+
+  color: white !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      #6366f1,
+      #20b99b,
+      #12c98a
+    ) !important;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   PINK BUTTON
+================================ */
+
+.expense-form button {
+  width: 100% !important;
+  margin-top: 18px;
+
+  padding: 14px !important;
+
+  border: none !important;
+  border-radius: 10px !important;
+
+  color: white !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c82bdc,
+      #ed2688,
+      #ff527d
+    ) !important;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   RECENT LISTS
+================================ */
+
+.lists-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+/* GREEN RECENT INCOME */
+
+.income-list {
+  padding: 24px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #092c3b,
+      #071b35
+    ) !important;
+
+  color: white !important;
+
+  border: 1px solid rgba(0, 210, 170, 0.32) !important;
+
+  border-radius: 18px !important;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* PINK RECENT EXPENSE */
+
+.expense-list {
+  padding: 24px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #351337,
+      #210d2e
+    ) !important;
+
+  color: white !important;
+
+  border: 1px solid rgba(255, 50, 145, 0.30) !important;
+
+  border-radius: 18px !important;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* List text */
+
+.income-list *,
+.expense-list * {
+  color: #ffffff !important;
+}
+
+
+/* Green amounts */
+
+.income-list strong {
+  color: #35e3aa !important;
+}
+
+
+/* Pink amounts */
+
+.expense-list strong {
+  color: #ff78ad !important;
+}
+
+
+/* Small date text */
+
+.income-list small,
+.expense-list small {
+  color: #9ba3c4 !important;
+}
+
+
+/* ================================
+   VIEW ALL
+================================ */
+
+.income-list button {
+  color: #35e3aa !important;
+
+  background: rgba(16, 185, 129, 0.10) !important;
+
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+
+  border-radius: 8px;
+}
+
+
+.expense-list button {
+  color: #ff70a8 !important;
+
+  background: rgba(236, 72, 153, 0.10) !important;
+
+  border: 1px solid rgba(236, 72, 153, 0.35) !important;
+
+  border-radius: 8px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+  .cards-container,
+  .forms-container,
+  .lists-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    padding: 30px 5% 50px !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .dashboard {
+    padding: 25px 18px 40px !important;
+  }
+
+  .dashboard h1 {
+    font-size: 26px;
+  }
+}
+
+/* =========================================
+   FIX WHITE AREAS - DARK PINK THEME
+   Paste at the VERY END of Dashboard.css
+========================================= */
+
+/* Search inputs / dropdowns */
+.income-list input,
+.expense-list input,
+.income-list select,
+.expense-list select {
+  background: #11132f !important;
+  color: #ffffff !important;
+
+  border: 1px solid rgba(236, 72, 153, 0.45) !important;
+
+  box-shadow:
+    0 0 15px rgba(236, 72, 153, 0.08) !important;
+}
+
+.income-list input::placeholder,
+.expense-list input::placeholder {
+  color: #9da4c5 !important;
+}
+
+/* Search focus */
+.income-list input:focus,
+.expense-list input:focus,
+.income-list select:focus,
+.expense-list select:focus {
+  outline: none !important;
+
+  border-color: #ec4899 !important;
+
+  box-shadow:
+    0 0 0 3px rgba(236, 72, 153, 0.12),
+    0 0 18px rgba(236, 72, 153, 0.12) !important;
+}
+
+
+/* =========================================
+   INCOME / EXPENSE WHITE ITEMS
+========================================= */
+
+.income-list > div,
+.expense-list > div {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(20, 24, 55, 0.98),
+      rgba(13, 16, 42, 0.98)
+    ) !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid
+    rgba(120, 130, 190, 0.18) !important;
+
+  border-radius: 14px !important;
+
+  margin-bottom: 12px !important;
+
+  padding: 14px !important;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.20) !important;
+}
+
+
+/* Income = GREEN + PURPLE */
+.income-list > div:hover {
+  border-color:
+    rgba(52, 211, 153, 0.55) !important;
+
+  box-shadow:
+    0 0 20px rgba(16, 185, 129, 0.12) !important;
+
+  transform: translateY(-2px);
+
+  transition: 0.2s ease;
+}
+
+
+/* Expense = PINK */
+.expense-list > div {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(42, 15, 48, 0.98),
+      rgba(20, 13, 38, 0.98)
+    ) !important;
+
+  border-color:
+    rgba(236, 72, 153, 0.25) !important;
+}
+
+.expense-list > div:hover {
+  border-color:
+    rgba(236, 72, 153, 0.65) !important;
+
+  box-shadow:
+    0 0 22px rgba(236, 72, 153, 0.16) !important;
+
+  transform: translateY(-2px);
+
+  transition: 0.2s ease;
+}
+
+
+/* =========================================
+   TEXT INSIDE ITEMS
+========================================= */
+
+.income-list > div *,
+.expense-list > div * {
+  color: #ffffff;
+}
+
+.income-list small,
+.expense-list small {
+  color: #9da4c5 !important;
+}
+
+
+/* Income amount */
+.income-list strong {
+  color: #34d399 !important;
+}
+
+
+/* Expense amount */
+.expense-list strong {
+  color: #fb71b0 !important;
+}
+
+
+/* =========================================
+   PINK VIEW ALL BUTTON
+========================================= */
+
+.expense-list button {
+  color: #ff72b5 !important;
+
+  background:
+    rgba(236, 72, 153, 0.10) !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.45) !important;
+
+  box-shadow:
+    0 0 12px rgba(236, 72, 153, 0.08);
+}
+
+.expense-list button:hover {
+  background:
+    rgba(236, 72, 153, 0.20) !important;
+
+  border-color: #ec4899 !important;
+}
+
+
+/* =========================================
+   INCOME VIEW ALL
+========================================= */
+
+.income-list button {
+  color: #45e6ae !important;
+
+  background:
+    rgba(16, 185, 129, 0.10) !important;
+
+  border: 1px solid
+    rgba(16, 185, 129, 0.40) !important;
+}
+
+
+/* =========================================
+   ICON CIRCLES
+========================================= */
+
+.income-list svg {
+  color: #34d399;
+}
+
+.expense-list svg {
+  color: #fb71b0;
+}
+
+
+/* =========================================
+   REMOVE WHITE BACKGROUNDS EVERYWHERE
+========================================= */
+
+.income-list,
+.expense-list,
+.income-form,
+.expense-form {
+  color: #ffffff !important;
+}
+
+.income-list *,
+.expense-list * {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   RECENT TRANSACTION BOXES - DARK PINK
+========================================= */
+
+/* Income ke niche wale white boxes */
+.income-list > div {
+  background:
+    linear-gradient(
+      135deg,
+      #241333 0%,
+      #30143d 50%,
+      #1a102b 100%
+    ) !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.45) !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 8px 22px rgba(236, 72, 153, 0.12) !important;
+}
+
+
+/* Expense ke niche wale white boxes */
+.expense-list > div {
+  background:
+    linear-gradient(
+      135deg,
+      #35132d 0%,
+      #421536 50%,
+      #211027 100%
+    ) !important;
+
+  border: 1px solid
+    rgba(236, 72, 153, 0.50) !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 8px 22px rgba(236, 72, 153, 0.14) !important;
+}
+
+
+/* Text white */
+.income-list > div *,
+.expense-list > div * {
+  color: #ffffff !important;
+}
+
+
+/* Income amount green */
+.income-list > div strong {
+  color: #34d399 !important;
+}
+
+
+/* Expense amount pink */
+.expense-list > div strong {
+  color: #ff72b5 !important;
+}
+
+
+/* Small date/category text */
+.income-list > div small,
+.expense-list > div small {
+  color: #aeb3cf !important;
+}
+
+
+/* Hover effect */
+.income-list > div:hover,
+.expense-list > div:hover {
+  transform: translateY(-2px);
+
+  border-color: #ec4899 !important;
+
+  box-shadow:
+    0 0 25px rgba(236, 72, 153, 0.22) !important;
+
+  transition: all 0.2s ease;
+}
+/* =========================================
+   WHITE TRANSACTION PATTIES -> DARK PINK
+========================================= */
+
+.income-list > div,
+.expense-list > div {
+  background: linear-gradient(
+    135deg,
+    #24102f 0%,
+    #35133e 50%,
+    #1d102b 100%
+  ) !important;
+
+  border: 1px solid rgba(236, 72, 153, 0.45) !important;
+
+  border-radius: 14px !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 6px 18px rgba(236, 72, 153, 0.12) !important;
+}
+
+/* Income patti - slightly green/purple */
+.income-list > div {
+  background: linear-gradient(
+    135deg,
+    #102d36 0%,
+    #162c45 45%,
+    #291438 100%
+  ) !important;
+
+  border-color: rgba(52, 211, 153, 0.35) !important;
+}
+
+/* Expense patti - pink */
+.expense-list > div {
+  background: linear-gradient(
+    135deg,
+    #35132d 0%,
+    #461536 50%,
+    #24102e 100%
+  ) !important;
+
+  border-color: rgba(236, 72, 153, 0.50) !important;
+}
+
+/* Patti ke andar text */
+.income-list > div *,
+.expense-list > div * {
+  color: #ffffff !important;
+}
+
+/* Income amount */
+.income-list > div strong {
+  color: #45e6ae !important;
+}
+
+/* Expense amount */
+.expense-list > div strong {
+  color: #ff72b5 !important;
+}
+
+/* Date / small text */
+.income-list > div small,
+.expense-list > div small {
+  color: #aeb3cf !important;
+}
+
+/* Hover */
+.income-list > div:hover,
+.expense-list > div:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 25px rgba(236, 72, 153, 0.20) !important;
+
+  transition: 0.2s ease;
+}
+.income-list > div,
+.expense-list > div {
+  background: linear-gradient(
+    135deg,
+    #24102f,
+    #461536,
+    #1d102b
+  ) !important;
+
+  border: 1px solid rgba(236, 72, 153, 0.5) !important;
+  color: white !important;
+}
+
+.income-list > div *,
+.expense-list > div * {
+  background: transparent !important;
+  color: white !important;
+}
+
+.income-list > div strong {
+  color: #45e6ae !important;
+}
+
+.expense-list > div strong {
+  color: #ff72b5 !important;
+}
+/* =========================
+   SUMMARY CARD ICON FIX
+========================= */
+
+/* Total Balance icon */
+.summary-card:nth-child(1) .card-icon {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+}
+
+/* Total Income icon */
+.summary-card:nth-child(2) .card-icon {
+  background: rgba(40, 220, 170, 0.20) !important;
+  color: #55f5c5 !important;
+}
+
+/* Total Expenses icon */
+.summary-card:nth-child(3) .card-icon {
+  background: rgba(255, 50, 150, 0.20) !important;
+  color: #ff72b7 !important;
+}
+
+/* Make icon clearly visible */
+.summary-card .card-icon svg {
+  color: inherit !important;
+  fill: currentColor;
+  stroke: currentColor;
+}
+/* =========================
+   DASHBOARD CARD ICON FIX
+========================= */
+
+.balance-card > div:last-child,
+.income-card > div:last-child,
+.expense-card > div:last-child,
+.balance-card .icon,
+.income-card .icon,
+.expense-card .icon,
+.stat-icon {
+  background: rgba(255, 255, 255, 0.10) !important;
+  color: #ffffff !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.20) !important;
+
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+
+  border-radius: 14px;
+}
+
+/* Balance icon */
+.balance-card .icon {
+  background: rgba(108, 99, 217, 0.45) !important;
+}
+
+/* Income icon */
+.income-card .icon {
+  background: rgba(25, 190, 145, 0.35) !important;
+}
+
+/* Expense icon */
+.expense-card .icon {
+  background: rgba(230, 45, 120, 0.40) !important;
+}

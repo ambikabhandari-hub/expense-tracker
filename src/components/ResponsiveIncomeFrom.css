@@ -1,0 +1,48 @@
+@media (max-width: 700px) {
+  .income-form {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .income-form form {
+    width: 100%;
+  }
+
+  .income-form input,
+  .income-form select,
+  .income-form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .income-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .income-form {
+    padding: 15px;
+  }
+
+  .income-form h2 {
+    font-size: 20px;
+  }
+
+  .income-form label {
+    font-size: 13px;
+  }
+
+  .income-form input,
+  .income-form select {
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .income-form button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

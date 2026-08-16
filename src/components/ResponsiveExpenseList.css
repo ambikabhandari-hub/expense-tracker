@@ -1,0 +1,48 @@
+.expense-list {
+  width: 100%;
+}
+
+.expense-list-container {
+  width: 100%;
+}
+
+.expense-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+@media (max-width: 700px) {
+  .expense-list {
+    width: 100%;
+  }
+
+  .expense-list-item {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .expense-list-item h3 {
+    font-size: 15px;
+  }
+
+  .expense-list-item p {
+    font-size: 13px;
+  }
+
+  .expense-list-item strong {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .expense-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expense-list-item strong {
+    align-self: flex-end;
+  }
+}
