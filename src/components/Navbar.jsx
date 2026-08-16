@@ -5,11 +5,15 @@ import "./Navbar.css";
 function Navbar() {
   const navigate = useNavigate();
 
+  const savedUser = JSON.parse(
+    localStorage.getItem("user") || "null"
+  );
+
+  const userName = savedUser?.name || "User";
+
   const handleLogout = () => {
-    // Login session remove
     localStorage.removeItem("isLoggedIn");
 
-    // Login page par redirect
     navigate("/login", { replace: true });
   };
 
@@ -43,8 +47,9 @@ function Navbar() {
           Reports
         </NavLink>
 
+        {/* USER NAME */}
         <div className="navbar-user">
-          👤 Ambika
+          👤 {userName}
         </div>
 
         {/* LOGOUT */}
